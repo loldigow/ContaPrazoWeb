@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "gerenciador de banco",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "loldigow",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "debug": "^3.1.0",
+    "express": "^4.16.2",
+    "fl": "^0.1.1",
+    "http": "0.0.0",
+    "mongoq": "^0.2.5",
+    "sleep": "^5.1.1"
+  }
+}

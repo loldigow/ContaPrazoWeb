@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="js/complemento.js" type="text/javascript"></script>
+		<style>
+			body{
+				background: linear-gradient(#FFFFFF,#FFFFFF, #cac7c7);
+				height:800px;
+			}
+			div.modal{
+				border:1px solid black;
+				text-align: center;
+				background:rgba(205,205,205,0.5);
+				position:absolute;
+				display:none;
+				left:0;
+				top:0;
+				width: 100%;
+				height: 1000px;
+
+			}
+			div.pagina{
+				display: grid;
+				grid-template-columns: 2fr 5fr 2fr;
+				grid-template-rows: 100px;
+				
+			}
+			div.teste:hover {
+				color:#000000;
+				text-decoration:underline;
+			}
+			input{
+				text-align: center;
+				border: 1px solid black;
+				border-bottom: 0px;
+				border-right:0px;
+			}
+			div.dia{
+			
+				height: 25px;
+			}
+			div.calendario{
+				
+				background: rgb(235, 228, 228);
+				border:1px solid rgb(182, 156, 156);
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="modal" id="modal">
+			<div style="padding: 300px">
+				<div>
+					<img src="b8ana.gif" style="width: 50px;" >
+				</div>
+				<div >
+					loading
+				</div>
+			</div>
+		</div>
+		<div class="pagina">
+			<div></div>
+			<div style="text-align: center; display:grid; grid-template-columns: 3fr 5fr 3fr">
+				<div><img src="tjgo.jpg" width="100px" title="tribunal de justica"></div>
+				<div><h1>Conta Prazo Criminal</h1></div>
+				<div>opcoes</div>
+			</div>
+			<div></div>
+
+			<div></div>
+			<div class="input-data" style="text-align: center; padding:25px"><input type="text" id="entrada" placeholder="dia/mes/ano"> </div>
+			<div></div>
+
+			<div></div>
+			<div class="calendario"  style="border :1px solid black">
+				<div style="width: 100%;  height:30px; color:white; background: rgb(173, 38, 38); text-align: center;">Calendario</div>
+				<div style="width: 100%; display:grid; grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr; text-align: center;">
+				<div class="dia">Domingo</div>
+				<div class="dia">Segunda</div>
+				<div class="dia">Terça</div>
+				<div class="dia">Quarta</div>
+				<div class="dia">Quinta</div>
+				<div class="dia">Sexta</div>
+				<div class="dia">Sabado</div>
+			</div>
+			<div id="calendario" style="width: 100%; display:grid; grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr; text-align: center;">
+			</div>
+			</div>
+			<div></div>
+
+			<div></div>
+			<div class="calcule" style="text-align: center; padding:25px"><input type="txt" id="dias" value="5" style="width: 5%; margin:5px"><input type="button" id="enter" value="calcular"></div>
+			<div></div>
+
+		</div>
+		<script src="js/main.js"         type="text/javascript"></script>
+	</body>
+</html>
